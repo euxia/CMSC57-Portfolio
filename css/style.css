@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-logo {
+    display: flex; 
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    color:black; 
+    margin-left: 10px;
+}
+
+.navbar-bg {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.nav-icon {
+    font-size: 26px;
+}
+
+.idx-landing {
+    height: 100vh; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 0 8%;
+}
+
+.card-img-top{
+    border-radius: 50px;
+    padding: 15px;
+}
+
+/* Decide if you want to put border */
+/* .card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+} */
+
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+
+.zoom-on-hover:hover img {
+    transform: scale(1.15); /* Adjust scale value as needed */
+    transition: transform 0.25s ease; /* Smooth transition */
+}
+
+.main {
+    margin-top: 10vh;
+    padding: 0 5%;
+}
+
+.card-img-week {
+    width: 30vw;
+    border-radius: 40px;
+    padding: 20px;
+    object-fit: cover;
+    object-position: center;
+}
