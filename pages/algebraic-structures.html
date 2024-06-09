@@ -26,31 +26,54 @@
     </nav>
     <main class="container main">
         <div class="row justify-content-md-center text-center">
-            <h1>Pigeonhole Principle</h1>
-            <img src="../img/week2.png" class="card-img-week mx-auto d-block img-fluid" alt="...">
+            <h1>Algebraic Structures</h1>
+            <img src="../img/week11.png" class="card-img-week mx-auto d-block img-fluid" alt="...">
 
-            <p class="justify-text">Learning the</p>
-
-            <p class="justify-text">Basics of Counting technically is a prerequisite in understanding the principles of combinatorics. There are fundamental rules to be remembered for Basics of Counting. Product Rule and Sum Rule. Product rule theory states that; suppose a procedure can be broken down into a sequence of two tasks. There are n1 ways to do the first task and n2 ways to do the second task. Then there are n1∙n2 ways to do the procedure.</p>
-
-            <p class="justify-text"><strong>Product Rule Example: </strong> Suppose I have a store with hats featuring two designs: one with stars and one with stripes. For the star hats, I have 2 styles and each style comes in 2 colors. For the stripe hats, I have 2 styles and each style comes in 3 colors. I want to buy a star hat and a stripe hat. </p>
-
-            <img src="../img-pages/basics-of-counting-product.png" class="card-img-week mx-auto d-block img-fluid" alt="...">
-
-            <p class="justify-text">First, calculate the total number of star hats: <strong>2 (styles) x 2 (colors) = 4 (star hats) </strong> </p>
-            <p class="justify-text">Next, calculate the total number of stripe hats: <strong>2 (styles) x 3 (colors) = 6 (stripe hats) </strong></p>
-            <p class="justify-text">Next, calculate the total number of stripe hats: <strong>4 (star hats) x 6 (stripe hats) = 24 (total hat options) </strong></p>
-
-            <p class="justify-text"> Sum rule, on the other hand, states that; If a task can be done either in one of n1 ways or in one of n2 ways to do the second task, where none of the set of n1 ways is the same as any of the n2 ways, then there are n1 + n2 ways to do the task.</p>
-
-            <p class="justify-text"><strong>Sum Rule Example: </strong> If there are 5 ways to get to school by bus and 3 ways by bike, and I can choose only one mode of transportation, then there are 5 + 3 = 8 ways to get to school.
+            <p class="justify-text">
+                As we enter week 11 of our exploration into Discrete Mathematical Structures in Computer Science, the terrain has notably shifted. The topics have become more intricate and challenging, requiring a higher level of understanding and analytical skills. This week, we are delving into algebraic structures, adding new layers of complexity to the subject. While the beauty of combinatorial mathematics still captivates me, the nuances and demands of algebraic structures have significantly heightened. This shift has transformed what once felt like a smooth journey into a more rigorous and demanding challenge, pushing the boundaries of my comprehension and perseverance.
             </p>
+
+            <p class="justify-text">
+                We kickstarted this week with the basic concepts, starting with the properties of binary operations. Binary operations, which involve two operands, are fundamental to understanding algebraic structures. We explored properties such as closure, which ensures that the operation on any two elements of the set results in another element within the same set. Associativity was another key property, highlighting that the grouping of elements does not affect the result of the operation.
+            </p>
+
+            <p class="justify-text">
+                Next, we examined the identity element, a special element in the set that, when used in the operation with any other element of the set, leaves the other element unchanged. Furthermore, we delved into the concept of inverse elements, where each element in the set has a corresponding element that, when combined with the original in the operation, yields the identity element. 
+            </p>
+
+            <p class="justify-text">
+                These foundational properties set the stage for deeper exploration into more complex algebraic structures such as groups, rings, and fields. These sets equipped with one or more operations that satisfy specific axioms. These structures form the foundation for various mathematical theories and applications.
+            </p>
+
+            <img src="../img-pages/algebraic-structures-diagram.png" class="card-img-week mx-auto d-block img-fluid" alt="...">
+
+            <p class="justify-text">
+                <strong>Group: </strong> A set with a single operation that satisfies four conditions—closure, associativity, the existence of an identity element, and the existence of inverse elements.
+            </p>
+
+            <p class="justify-text">
+                <strong>Rings: </strong> A set equipped with two operations, addition and multiplication, that behaves similarly to the integers, where addition forms an abelian group, multiplication is associative, and multiplication distributes over addition.
+            </p>
+
+            <p class="justify-text">
+                <strong>Rings: </strong> A set with two operations, addition and multiplication, where both operations form abelian groups, and multiplication distributes over addition.
+            </p>
+            <p class="justify-text">The Diffie-Hellman key exchange is a method of securely exchanging cryptographic keys over a public channel. Here's a simplified outline of how it uses group properties:</p>
             
-            <p class="justify-text">These fundamental concepts must be understood because it is the foundation of many topics to come. By combining the two concepts, sum rule and product rule, we can solve real life problems that already involved combinatorics. </p>
-
-            <p class="fst-italic fs-6">"How many bit strings of length eight either start with a bit or end with the two bits?"</p>
-
-            <p class="justify-text">The number of bit strings of length eight that start with a 1 bit is 2<sup>7</sup> = 128. The number of bit strings of length eight that start with the bits 00 is 2<sup>6</sup> = 64. The number of bit strings of length eight that start with a 1 bit and end with the bits 00 is 2<sup>5</sup> = 32. Using the inclusion-exclusion principle, the total number of bit strings of length eight that start with a 1 bit or start with 00 is 128 + 64 - 32 = 160.</p>
+            <p class="justify-text"><strong>Setup:</strong></p>
+            <p class="justify-text">Choose a large prime number p and a generator g of a cyclic group {Z}p* (the multiplicative group of integers modulo p).</p>
+            
+            <p class="justify-text"><strong>Key Exchange:</strong></p>
+            <p class="justify-text">Alice selects a private key a and computes A = g<sup>a</sup> mod p.</p>
+            <p class="justify-text">Bob selects a private key b and computes B = g<sup>b</sup> mod p.</p>
+            <p class="justify-text">Alice sends A to Bob, and Bob sends B to Alice.</p>
+            
+            <p class="justify-text"><strong>Shared Secret:</strong></p>
+            <p class="justify-text">Alice computes the shared secret as S = B<sup>a</sup> mod p.</p>
+            <p class="justify-text">Bob computes the shared secret as S = A<sup>b</sup> mod p.</p>
+            <p class="justify-text">Both Alice and Bob now share the same secret S, thanks to the properties of the group, specifically g<sup>ab</sup> mod p.</p>
+            
+            <p class="justify-text">This application showcases how the properties of groups are integral to the security and functionality of modern cryptographic protocols.</p>
         </div>
     </main>
 </body>
