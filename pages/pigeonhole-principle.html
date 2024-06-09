@@ -24,33 +24,31 @@
             </div>  
         </div>
     </nav>
-    <main class="container main">
+    <main class="container main py-4">
         <div class="row justify-content-md-center text-center">
             <h1>Pigeonhole Principle</h1>
             <img src="../img/week2.png" class="card-img-week mx-auto d-block img-fluid" alt="...">
 
-            <p class="justify-text">Learning the</p>
+            <p class="justify-text">Learning the pigeonhole-principle is fascinating and it really made me realize the importance of thinking outside the box when solving problems. The pigeonhole principle states that if you have more "pigeons" than "pigeonholes," then at least one pigeonhole must contain more than one pigeon. This may seem like a simple concept, but it has broad applications in various areas of mathematics and computer science</p>
 
-            <p class="justify-text">Basics of Counting technically is a prerequisite in understanding the principles of combinatorics. There are fundamental rules to be remembered for Basics of Counting. Product Rule and Sum Rule. Product rule theory states that; suppose a procedure can be broken down into a sequence of two tasks. There are n1 ways to do the first task and n2 ways to do the second task. Then there are n1∙n2 ways to do the procedure.</p>
+            <p class="justify-text">Pigeonhole principle follow Follows an obvious observation: If you have n pigeons in k pigeonholes and if n > k then there is at least one pigeonhole that contains more than one pigeon.</p>
 
-            <p class="justify-text"><strong>Product Rule Example: </strong> Suppose I have a store with hats featuring two designs: one with stars and one with stripes. For the star hats, I have 2 styles and each style comes in 2 colors. For the stripe hats, I have 2 styles and each style comes in 3 colors. I want to buy a star hat and a stripe hat. </p>
+            <p class="justify-text">The generalized pigeonhole principle extends the idea of the original principle to allow for a more flexible application. It states that if n items are placed into m containers and n > m, then at least one container must contain ceil(n/m) items.</p>
 
-            <img src="../img-pages/basics-of-counting-product.png" class="card-img-week mx-auto d-block img-fluid" alt="...">
-
-            <p class="justify-text">First, calculate the total number of star hats: <strong>2 (styles) x 2 (colors) = 4 (star hats) </strong> </p>
-            <p class="justify-text">Next, calculate the total number of stripe hats: <strong>2 (styles) x 3 (colors) = 6 (stripe hats) </strong></p>
-            <p class="justify-text">Next, calculate the total number of stripe hats: <strong>4 (star hats) x 6 (stripe hats) = 24 (total hat options) </strong></p>
-
-            <p class="justify-text"> Sum rule, on the other hand, states that; If a task can be done either in one of n1 ways or in one of n2 ways to do the second task, where none of the set of n1 ways is the same as any of the n2 ways, then there are n1 + n2 ways to do the task.</p>
-
-            <p class="justify-text"><strong>Sum Rule Example: </strong> If there are 5 ways to get to school by bus and 3 ways by bike, and I can choose only one mode of transportation, then there are 5 + 3 = 8 ways to get to school.
-            </p>
+            <p class="fst-italic fs-6"> k + 1 = [(n-1)/m] + 1 = [n/m]</p>
             
-            <p class="justify-text">These fundamental concepts must be understood because it is the foundation of many topics to come. By combining the two concepts, sum rule and product rule, we can solve real life problems that already involved combinatorics. </p>
+            <p class="justify-text">With this, we can solve interesting problems like a problem of, show among 100 people there are at least 9 who were born in the same month.</p>
 
-            <p class="fst-italic fs-6">"How many bit strings of length eight either start with a bit or end with the two bits?"</p>
+            <p class="justify-text">To use the pigeonhole principle, first find the objects and containers.   Suppose that for each month, we have a container that contains persons who were born in that month.  The number of containers is 12 and the number of objects is 100.  By the generalized pigeonhole principle, at least one of these containers contains at least ⌈100/12⌉ = ⌈8.333⌉ = 9. So, there must be at least 9 people who were born in the same month.</p>
 
-            <p class="justify-text">The number of bit strings of length eight that start with a 1 bit is 2<sup>7</sup> = 128. The number of bit strings of length eight that start with the bits 00 is 2<sup>6</sup> = 64. The number of bit strings of length eight that start with a 1 bit and end with the bits 00 is 2<sup>5</sup> = 32. Using the inclusion-exclusion principle, the total number of bit strings of length eight that start with a 1 bit or start with 00 is 128 + 64 - 32 = 160.</p>
+            <p class="justify-text"> This is only one of the example, pigeonhole is all-encompassing. For example, consider a classroom with 25 students and 24 available seats. If the students were to each choose a seat, at least one seat would have to be occupied by two students. This demonstrates the practical application of the pigeonhole principle in a common setting. Similarly, in a game of bingo where there are fewer numbers called than there are spaces on the card, it guarantees that at least one player will have all the called numbers on their card. The diagram below visualize how this works.</p>
+
+            <img src="../img-pages/pigeonhole-principle-diagram.jpg" class="card-img-week mx-auto d-block img-fluid" alt="...">
+
+            
+
+
+        
         </div>
     </main>
 </body>
