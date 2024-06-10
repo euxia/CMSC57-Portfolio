@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CMSC 57 Portfolio</title>
+    <title>Dijkstras Algoritmn</title>
     <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,17 +19,37 @@
             <div class="col">
                 <div class="nav-logo">
                     <i class="lni lni-home nav-icon"></i>
-                    <a class="navbar-brand" href="index.html">Home</a>
+                    <a class="navbar-brand" href="../">Home</a>
                 </div>
             </div>  
         </div>
     </nav>
-    <main class="container main py-6">
+    <main class="container main">
         <div class="row justify-content-md-center text-center">
-            <h1>Basics of Counting</h1>
-            <img src="./img/week1.webp" class="card-img-week mx-auto d-block img-fluid" alt="...">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h1>Dijkstras Algoritmn</h1>
+            <img src="../img/week16-2.png" class="card-img-week mx-auto d-block img-fluid" alt="...">
+
+            <p class="justify-text">
+                In addition to Euler and Hamiltonian circuits, we also delved into Dijkstra's algorithm during week 16. This topic piqued my interest as it is a well-known algorithm used to solve shortest path problems. I had encountered mentions of it in various contexts such as in gaming and mapping applications, and I was eager to understand its workings in more detail. Despite the initial complexity of the topic, I found myself intrigued by the practical applications and real-world relevance of Dijkstra's algorithm.
+            </p>
+
+            <p class="justify-text">
+                This algorithm addresses the shortest path problem, which involves finding the shortest path between two nodes in a graph. The significance of Dijkstra's algorithm lies in its efficiency and versatility in solving this fundamental problem, making it a crucial tool in various real-world applications.
+            </p>
+
+            <p class="justify-text">
+                The algorithm operates by iteratively exploring neighboring vertices of a designated starting node, updating the shortest path estimates to reach each vertex. It maintains a priority queue of vertices ordered by their tentative distances from the starting node. At each iteration, the algorithm selects the vertex with the shortest known distance and explores its neighboring vertices, updating their distance estimates if a shorter path is found. This process continues until all vertices have been visited, ensuring that the shortest path from the starting node to every other node in the graph is determined.
+            </p>
+
+            <img src="../img-pages/djikstras-algoritmn-problem.JPG" class="card-img-week mx-auto d-block img-fluid" alt="...">
             
+            <p class="justify-text">
+                Dijkstra's algorithm's efficiency stems from its greedy nature, as it always selects the vertex with the shortest known distance at each step. However, this efficiency comes with a prerequisite: the graph must have non-negative edge weights for the algorithm to produce correct results. Despite this limitation, Dijkstra's algorithm remains a powerful tool in various domains, including transportation networks, computer networks, and geographic information systems. Its adaptability to different graph structures, coupled with its straightforward implementation, makes it a go-to choice for solving shortest path problems in practical scenarios.
+            </p>
+
+            <p class="justify-text">
+                Imagine you are developing a navigation application for a city's public transportation system. Your goal is to help commuters find the shortest path between two locations, considering factors such as distance and time. To achieve this, you can utilize Dijkstra's algorithm to efficiently compute the shortest path between any two bus stops or subway stations in the city.
+            </p>
         </div>
     </main>
 </body>

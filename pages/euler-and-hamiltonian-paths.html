@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CMSC 57 Portfolio</title>
+    <title>Euler and Hamiltonian Paths</title>
     <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,17 +19,46 @@
             <div class="col">
                 <div class="nav-logo">
                     <i class="lni lni-home nav-icon"></i>
-                    <a class="navbar-brand" href="index.html">Home</a>
+                    <a class="navbar-brand" href="../">Home</a>
                 </div>
             </div>  
         </div>
     </nav>
-    <main class="container main py-6">
+    <main class="container main">
         <div class="row justify-content-md-center text-center">
-            <h1>Basics of Counting</h1>
-            <img src="./img/week1.webp" class="card-img-week mx-auto d-block img-fluid" alt="...">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h1>Euler and Hamiltonian Paths</h1>
+            <img src="../img/week16-1.png" class="card-img-week mx-auto d-block img-fluid" alt="...">
+
+            <p class="justify-text">
+                Now we are on week 16, tackling the concepts of Euler and Hamiltonian circuits. Initially, I found these topics extremely confusing and complex due to my lack of attention in class. The various theorems and conditions associated with these circuits made my head hurt. Euler circuits, which require visiting every edge exactly once, and Hamiltonian circuits, which involve visiting every vertex exactly once, seemed daunting with their specific rules and intricacies.
+            </p>
+
+            <p class="justify-text">
+                However, during one quiz, with the help of my peer, I gradually started to understand the concepts. We worked through several problems together, and their explanations clarified many of my doubts. By visualizing the circuits and applying the theorems systematically, I began to see the patterns and logic behind them. This hands-on practice, combined with collaborative learning, turned what initially seemed like an insurmountable challenge into a manageable and even intriguing topic. 
+            </p>
+
+            <p class="justify-text">
+                Euler and Hamiltonian circuits are fundamental concepts in graph theory, each with distinct characteristics and applications. An Euler circuit is a path in a graph that visits every edge exactly once and returns to the starting vertex, implying that such a circuit can exist only if the graph is connected and all vertices have an even degree. This concept finds practical applications in scenarios such as solving the famous "Seven Bridges of Königsberg" problem, where the task is to determine a walk through the city that crosses each bridge once. On the other hand, a Hamiltonian circuit visits every vertex exactly once, forming a loop. Unlike Euler circuits, there are no simple necessary and sufficient conditions to determine the existence of a Hamiltonian circuit, making it a more complex problem. This complexity is highlighted in various applications, such as the traveling salesman problem, where the goal is to find the shortest possible route that visits each city once and returns to the origin city. Understanding these circuits involves grasping different theorems and criteria, such as Euler's theorem for Euler circuits and Dirac's and Ore's theorems for Hamiltonian circuits. While Euler circuits focus on edge traversal and can be identified relatively straightforwardly, Hamiltonian circuits emphasize vertex traversal, requiring more intricate analysis and problem-solving strategies. These distinctions underscore the rich diversity within graph theory and its wide-ranging implications in both theoretical and practical contexts. 
+            </p>
+
+            <img src="../img-pages/euler-and-hamiltonian-path.jpeg" class="card-img-week mx-auto d-block img-fluid" alt="...">
             
+            <p class="justify-text">
+                Consider this problem, the city park department is planning to inspect all the walking paths in a large park. The park is designed with several intersections connected by various paths, and each path must be inspected exactly once. The department wants to find a route that starts and ends at the same intersection, covering each path exactly once, forming an Euler circuit.
+            </p>
+
+            <p class="justify-text">
+                The park can be represented as a graph, where each intersection is a vertex, and each path is an edge. The task is to determine whether an Euler circuit exists and, if so, to find one.
+            </p>
+
+            <p class="justify-text">
+                Upon examining the graph, we find that vertices A, B, C, and E have odd degrees, indicating that an Euler circuit does not exist in its current state. To create an Euler circuit, we need to modify the graph so that all vertices have even degrees. For example, by adding an additional path between vertices D and B, we can adjust their degrees to make them even. However, even with this modification, vertices A, C, and E still have odd degrees, preventing the formation of an Euler circuit. This problem highlights the importance of ensuring all vertices have even degrees to achieve an Euler circuit.
+            </p>
+
+            <p class="justify-text">
+                In practical terms, suppose the city park department successfully modifies the graph to have all even degrees by adding or adjusting paths as necessary. Once all vertices have even degrees, they can find an Euler circuit, such as a route that follows the paths in a specific sequence, visiting each path exactly once before returning to the starting intersection. This systematic approach ensures that all walking paths are inspected efficiently, demonstrating the application of Euler circuits in real-life scenarios like park maintenance.
+            </p>
+
         </div>
     </main>
 </body>

@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CMSC 57 Portfolio</title>
+    <title>Representing Graphs and Graph Isomorphism</title>
     <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,17 +19,40 @@
             <div class="col">
                 <div class="nav-logo">
                     <i class="lni lni-home nav-icon"></i>
-                    <a class="navbar-brand" href="index.html">Home</a>
+                    <a class="navbar-brand" href="../">Home</a>
                 </div>
             </div>  
         </div>
     </nav>
-    <main class="container main py-6">
+    <main class="container main">
         <div class="row justify-content-md-center text-center">
-            <h1>Basics of Counting</h1>
-            <img src="./img/week1.webp" class="card-img-week mx-auto d-block img-fluid" alt="...">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h1>Representing Graphs and Graph Isomorphism</h1>
+            <img src="../img/week15.png" class="card-img-week mx-auto d-block img-fluid" alt="...">
+
+            <p class="justify-text">
+                Now, in week 15, we begin with an entirely new topic: graphs. Essentially, it's a two-in-one topic for this week. The concept of graphs is foreign yet surprisingly easy to grasp, as it is not overly complex. We are diving into understanding vertices and edges, learning how to represent graphs, and exploring different types of graphs such as directed and undirected graphs, as well as weighted and unweighted graphs. This new material, while initially unfamiliar, seems straightforward and provides a refreshing change from the intricate probability concepts we tackled earlier.
+            </p>
+
+            <p class="justify-text">
+                We started with the basics, such as defining what graphs are and understanding the importance of vertices (or nodes) and edges (the connections between nodes). We also explored different ways to represent graphs, like adjacency matrices and adjacency lists, each having its own advantages depending on the application. Furthermore, we examined various types of graphs, such as complete graphs, bipartite graphs, and trees, which have unique properties and uses in different contexts.
+            </p>
+
+            <p class="justify-text">
+                The transition into graphs has been relatively smooth, providing a much-needed break from the rigorous challenges of Bayes' theorem. The visual and intuitive nature of graphs makes the topic more engaging and easier to comprehend. 
+            </p>
+
+            <img src="../img-pages/representing-graphs-and-graph-isomorphism-roads.webp" class="card-img-week mx-auto d-block img-fluid" alt="...">
+
+            <p class="justify-text">
+                The practical applications of graphs further underscore their importance in discrete mathematics. Graph theory is pivotal in various fields, including network design, where it helps in optimizing routes and connections; social network analysis, which uses graphs to understand relationships and influence within networks; and in solving complex optimization problems like the traveling salesman problem. These applications demonstrate how the abstract concepts of graph theory translate into tangible solutions for real-world challenges. For example, we can follow this problem.
+            </p>
+
+            <img src="../img-pages/representing-graphs-and-graph-isomorphism-cables.jpg" class="card-img-week mx-auto d-block img-fluid" alt="...">
             
+            <p class="justify-text">
+                Consider a company that wants to ensure redundancy in their network design by comparing two different layouts. In one design, they have offices A, B, C, and D connected by cables. In another design, they have offices W, X, Y, and Z connected differently but aiming for the same connectivity. By representing these networks as graphs and checking for isomorphism, the company can confirm that both designs provide the same level of connectivity. This way, they can choose either design based on other factors like cost or ease of installation, knowing that the redundancy and connectivity properties are identical. This demonstrates the practical application of graph isomorphism in network design.
+            </p>
+
         </div>
     </main>
 </body>
